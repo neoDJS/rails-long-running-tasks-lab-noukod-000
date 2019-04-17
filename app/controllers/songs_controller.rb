@@ -11,7 +11,7 @@ class SongsController < ApplicationController
                   artist: Artist.find_or_create_by(name: song[1]),
                   last_name: song[2])
     end
-    redirect_to customers_path
+    redirect_to songs_path
   end
 
   def show
