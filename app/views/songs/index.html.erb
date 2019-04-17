@@ -1,6 +1,6 @@
 <%= form_tag customers_upload_path, multipart: true do %>
   <%= file_field_tag :songs %>
-  <%= submit_tag "Import songs" %>
+  <%= submit_tag "Import Songs" %>
 <% end %>
 <ul>
 <% @songs.each do |song| %>
